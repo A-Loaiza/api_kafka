@@ -13,9 +13,6 @@ RUN pip install --no-cache-dir -r requirements.txt
 # Copiar el resto de los archivos de la aplicación
 COPY . .
 
-# Copiar los modelos al contenedor
-COPY model/ ./model/
-
 # Exponer el puerto donde correrá FastAPI (por defecto, 8000)
 EXPOSE 8000
 
